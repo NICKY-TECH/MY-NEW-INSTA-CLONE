@@ -1,0 +1,360 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 2px solid red; */
+    font-family: 'Alegreya Sans', sans-serif;
+}
+
+
+
+main{
+    background-color: rgb(246,246,246);
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(12,1fr);
+    grid-template-areas: 
+    "aside aside main  main  main main main main main main main main"
+    "aside aside main  main  main main main main main main main main"
+    "aside aside main main  main main main main main main main main"
+    "aside aside main main  main main main main main main main main"
+    "aside aside main main  main main main main main main main main"
+    "aside aside main main  main main main main main main main main"
+    "aside aside main main  main main main main main main main main"
+    "aside aside main main  main main main main main main main main"
+    "aside aside main main  main main main main main main main main"
+    "aside aside main main  main main main main main main main main"
+    "aside aside main main  main main main main main main main main"
+    "aside aside main main  main main main main main main main main";
+    
+}
+
+.instagram-logo{
+    width: 10%;
+    margin-left: 1.2em;
+
+
+}
+
+aside{
+    grid-area: aside;
+    background-color: rgb(255,255,255);
+
+}
+
+.aside-content{
+    display: flex;
+    gap: 60px;
+    flex-direction: column;
+    position: fixed;
+    
+}
+.more-nav{
+ margin:7em 0 0 2em;
+
+}
+
+.more-link{
+    margin:  auto 0 0 1.3em;
+   
+}
+
+
+.aside-content ul li{
+    list-style-type: none;
+    margin: auto;
+    font-size: 1.2em;
+}
+
+/* this was changed to flex */
+.aside-content ul{
+    margin-left: 0.9em;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    gap: 30px;
+
+}
+
+.aside-content ul li{
+    margin-left: 0.9em;
+    display: flex;
+    gap: 40px;
+
+}
+
+
+
+.aside-content ul li a,.more-nav a{
+    overflow-wrap: break-word;
+    text-decoration: none;
+    color: rgb(0,0,0)
+}
+
+
+
+
+.section-div{
+    width: 60%;
+    margin: auto;
+    border-radius: 0.8em;
+
+}
+
+.middle-container{
+    padding-top: 50px;
+}
+
+.top-content{
+    background-color: rgb(255,255,255);
+    border-radius: 0.5em;
+    width: 100%;
+    padding: 40px 3px 40px 3px;
+    margin: auto;
+}
+
+.top-content span{
+    margin-left:1.5em;
+
+}
+
+.sharon-one{
+    width: 10%;
+    height:10%;
+    border-radius: 50%;
+    outline: 2px solid #c13584;
+    outline-offset: 3px;
+    margin-left:2em;
+
+}
+
+.sharon-three{
+    /* width: 30%; */
+    height:50px;
+    border-radius: 50%;
+    outline: 2px solid #c13584;
+    outline-offset: 3px;
+    margin-left:2em;
+
+}
+
+.profile-name{
+    padding-top: 1.1em;
+}
+.profile-name{
+    display: flex;
+    justify-content: space-between;
+}
+
+.profile-name span{
+    margin-left: 1.1em;
+}
+
+.fa-ellipsis{
+    margin-right:2em;
+}
+
+.live-content,.footer-images{
+    margin-top: 2em;
+    background-color: rgb(255,255,255);
+    border-radius: 0.5em;
+  
+
+}
+
+.post-owner-commented{
+    display: flex;
+    justify-content: space-between;
+}
+
+.heart-at-the-end-of-the-post{
+    margin-right: 1.1em;
+}
+
+.icons-style-container{
+    padding-top: 10px;
+    margin-left: 1.4em;
+    display: flex;
+    justify-content: space-between;
+  
+}
+
+.footer-images{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.first-icons span{
+    margin-right: 25px;
+  
+}
+
+.number-of-likes{
+    margin-left: 1.4em;
+    color: rgb(0,0,0);
+    text-decoration: none;
+    font-weight: bold;
+
+}
+
+.number-of-views{
+    margin-left: 1.4em;
+    padding-top: 2%;
+    color: rgba(0,0,0,0.6);
+    text-decoration: none;
+
+}
+
+.favorite-icon-footer{
+    margin: 20px -5609px 0 0;
+}
+
+.response{
+    margin-left: 1.4em;
+}
+
+
+
+.mike{
+    margin-top: 10px;
+    color: rgb(0,0,255);
+
+}
+
+.response-at{
+    color: rgb(255,0,0);
+
+}
+
+
+
+.post{
+    margin: 0.8em 1.4em 0;
+    
+}
+
+.more{
+    color: rgba(0,0,0,0.6);
+    text-decoration: none;
+    
+}
+
+
+.bookmark-icons{
+    margin-right: 1.4em;
+}
+
+.sharon-two{
+    object-fit: fill;
+    width: 100%;
+}
+
+.second-section{
+    grid-area: main;
+    display:grid;
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(12,1fr);
+    grid-template-areas: 
+    "first first first first first first first first first second second second"
+    "first first first first first first first first first second second second"
+    "first first first first first first first first first second second second"
+    "first first first first first first first first first second second second"
+    "first first first first first first first first first second second second"
+    "first first first first first first first first first second second second"
+    "first first first first first first first first first second second second"
+    "first first first first first first first first first second second second"
+    "first first first first first first first first first second second second"
+    "first first first first first first first first first second second second"
+    "first first first first first first first first first second second second"
+    "first first first first first first first first first second second second";
+}
+
+
+
+.first-part-of-second-section{
+    grid-area: first;
+    
+}
+
+.second-part-of-second-section{
+    grid-area: second;
+    display: flex;
+    flex-direction: column;
+    padding-right: 1.2em;
+
+}
+
+.profile-image-second{
+    width: 20%;
+}
+
+.first-section-of-second-part{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 3.9em;
+}
+
+.a-suggestion{
+    display: flex;
+    justify-content: space-between;
+    margin: 1.1em 0;
+
+}
+
+.account-profile{
+    display: flex;
+    gap: 10px;
+}
+
+.switch{
+    color: #0095F6;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.second-section-of-second-part{
+    display: flex;
+    justify-content: space-between;
+    margin: 1.2em 0;
+    gap: 10px;
+}
+
+.see-all{
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+
+}
+
+.suggest{
+    color: #8e8e8e;
+    font-weight: bold;
+
+}
+
+.username{
+    color: #000;
+    font-weight: bold;
+}
+
+.name{
+    color: #8e8e8e;
+}
+
+.copy-right{
+    color: #8e8e8e;
+    margin-top: 1.1em;
+}
+
+.first-part-of-footer a{
+    color: #8e8e8e;
+    font-size: 0.8em;
+    text-decoration: none;
+
+}
+
+.margin-for-icons{
+    margin-right: 1.1em;
+}
